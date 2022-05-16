@@ -5,21 +5,23 @@ chances = 5
 response = int(input("Guess a number!"))
 
     
-
-if( response>n) and (chances > 0):
+while (chances > 0)
+  if( response>n):
     response =   int(input("please guess lower!"))
-    chances = chances -1
+    
    
-    print(response)
+   
 
-if(response<n) and (chances > 0):
+  elif(response<n):
        response = int(input("Guess higher!"))
-       chances = chances -1
+      
 
-if(response==n) and (chances>0):
+  else:
      print("wow! your right..!")
-     chances = 0
-
+     break
+ chances = chances -1
+if(chances == 0):
+ print("your chances are over sorry :/")
 
 
 
